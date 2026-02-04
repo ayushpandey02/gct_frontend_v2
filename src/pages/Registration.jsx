@@ -94,7 +94,7 @@ const Registration = () => {
             data.append('photo', formData.photo);
             data.append('paymentScreenshot', formData.paymentScreenshot);
 
-            const response = await fetch(import.meta.env.VITE_BACKEND_URI_LOCAL, {
+            const response = await fetch(import.meta.env.VITE_BACKEND_URI, {
                 method: 'POST',
                 credentials: 'omit',
                 body: data
