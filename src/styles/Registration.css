@@ -1,0 +1,252 @@
+/* Registration Page Styles */
+
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: radial-gradient(circle at center, #fdfcf8, #f1f5f9);
+}
+
+.form-card {
+    background: rgba(255, 255, 255, 0.7);
+    /* Transparent */
+    backdrop-filter: blur(15px);
+    /* Glassmorphism */
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px 0 rgba(79, 70, 229, 0.1);
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form-title {
+    text-align: center;
+    color: var(--primary-color);
+    /* Golden */
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* Steps */
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.step-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #64748b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.step-item.active .step-circle {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 15px rgba(184, 134, 11, 0.4);
+}
+
+.step-item p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: #475569;
+    font-weight: 500;
+}
+
+.step-line {
+    flex: 1;
+    height: 3px;
+    background: #e2e8f0;
+    margin: 0 10px;
+    transform: translateY(-14px);
+    border-radius: 10px;
+}
+
+.step-line.active {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #334155;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.5);
+    /* Semi transparent input */
+    border: 1px solid rgba(184, 134, 11, 0.2);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.3s;
+    color: var(--text-color);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.2);
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+}
+
+.radio-group label:hover {
+    border-color: var(--primary-color);
+}
+
+/* File Upload */
+.file-upload-box {
+    border: 2px dashed rgba(184, 134, 11, 0.3);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: border-color 0.3s;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.file-upload-box:hover {
+    border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.file-upload-box input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.img-preview {
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+/* Buttons */
+.btn-block {
+    width: 100%;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* Loader */
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.loader-video {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 20px rgba(184, 134, 11, 0.2);
+}
+
+/* Payment QR */
+.qr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(184, 134, 11, 0.2);
+    text-align: center;
+}
+
+.qr-image {
+    max-width: 100%;
+    /* Responsive */
+    max-height: 250px;
+    /* Limit height */
+    object-fit: contain;
+    border-radius: 0.25rem;
+}
+
+.upi-text {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.highlight-text {
+    color: var(--primary-color);
+    background: rgba(184, 134, 11, 0.1);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+    user-select: all;
+    /* Make it easy to copy */
+}
