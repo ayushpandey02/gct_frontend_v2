@@ -28,28 +28,28 @@ const Home = () => {
             role: "Lead Organizer",
             about: "Cricket enthusiast with 10+ years of organizing local tournaments.",
             photo: avinashImg,
-            phone: "+919876543210"
+            phone: "+918169592669"
         },
         {
             name: "Imran Mansuri",
             role: "Brand Ambassador",
             about: "Former legend supporting local talent.",
             photo: imranImg,
-            phone: "+919876543211"
+            phone: "+917977468454"
         },
         {
             name: "Sachin Prajapati",
             role: "Technical Head",
             about: "Ensuring fair play and managing the digital presence of GCT.",
             photo: sachinImg,
-            phone: "+919876543212"
+            phone: "+918928315792"
         },
         {
             name: "Rama Krishna Sahani",
             role: "Ground Manager",
             about: "Expert in pitch curation and venue management.",
             photo: ramaImg,
-            phone: "+919876543213"
+            phone: "+919324762378"
         }
     ];
 
