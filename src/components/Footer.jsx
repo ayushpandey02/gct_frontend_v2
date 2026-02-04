@@ -21,7 +21,7 @@ const Footer = () => {
                 <div className="footer-col">
                     <h4>Follow Us</h4>
                     <div className="social-links">
-                        <a href=""><FaInstagram /></a>
+                        <a href="https://www.instagram.com/goregaonchampiontrophy?igsh=ZWtza3czYmRwMmZu"><FaInstagram /></a>
                     </div>
                 </div>
             </div>
